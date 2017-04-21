@@ -1,0 +1,2848 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2017上海车展无线网络保障</title>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/chartjs/1more.js"></script>
+    <script src="js/chartjs/2gauge.js"></script>
+    <script src="js/chartjs/4CN.js"></script>
+    <script src="js/chartjs/3unica.js"></script>
+    <script src="js/chartjs/5data.js"></script>
+	<script src="js/chartjs/6drilldown.js"></script>
+    <script src="js/chartjs/createFnobj.js"></script>
+    <script src="js/leftcenterdata.js"></script>
+    <script src="js/rightbottomdata2.js"></script>
+    <script src="js/righttop.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!--标题-->
+<div class="header">
+	<div class="logobox">
+		<img class="logoimg" src="img/logo.png" alt=""/>
+	</div>
+	<div class="logo2">
+		<img src="img/logo2.png" alt="" style="position:absolute;top:0;bottom:0;margin:auto;">
+	</div>
+	<div class="titlebox">
+		2017上海车展无线网络保障
+	</div>
+	<div id="show"></div>
+</div>
+<style>
+	.cut234Gbox{
+		width:100%;
+		height:32px;
+		margin: 0 auto;
+	}
+	.cut234Gbox span{
+		float: left;
+		width:25%;
+		height:32px;
+		line-height:32px;
+		font-size: 14px;
+		text-align: center;
+		color: white;
+		border:1px solid #353535;
+		border-top:0;
+		box-sizing:border-box;
+		margin-bottom:20px;
+	}
+	.clickcutG{
+		font-size: 12px;
+	}
+	.cut234Gbox .active{
+		color:yellow;
+		font-size:16px;
+		font-weight:bold;
+	}
+</style>
+
+<!--正文-->
+   <div class="navbox">
+   		<!--左边-->
+	   <div class="nleft">
+			<div class="cut234Gbox">
+   				<span  id="cutauto234G" class="active">自动</span>
+   				<span class="clickcutG">2G</span>
+   				<span class="clickcutG">3G</span>
+   				<span class="clickcutG">4G</span>
+   			</div>
+   			<!--左上角面积图表-->
+   			<div class="leftonebox">
+   				<!--<div id="leftonetu" class="leftonetu"></div>-->
+   			</div>
+   			<!--横柱形图-->
+   			<!--<div class="leftonebox">-->
+   				<!--&lt;!&ndash;<div id="leftwotu" class="leftonetu"></div>&ndash;&gt;-->
+   			<!--</div>-->
+			<div class="leftonebox">
+				<!--<div id="leftwotu" class="leftonetu"></div>-->
+			</div>
+   			<!--柱形图-->
+   			<div class="leftonebox">
+   				<!--<div id="lefthreetu" class="leftonetu"></div>-->
+   			</div>
+   		</div>
+   		<!--中间-->
+   		<div class="ncenter">
+   			<!--中间上部仪表盘-->
+   			<div class="ncttopbox">
+				<div style="width:69%;height:20px;position:absolute;left:25%;top:0;">
+					<div style="float:left;width:33.333%;text-align:center;font-size:14px;">接通率</div>
+					<div style="float:left;width:33.333%;text-align:center;font-size:14px;">调话率</div>
+					<div style="float:left;width:33.333%;text-align:center;font-size:14px;">可用率</div>
+				</div>
+   				<div class="instbox">
+   					<div id="inst1" class="inst"></div>
+   					<div id="inst2" class="inst"></div>
+   					<div id="inst3" class="inst"></div>
+					<div id="insttitleA" style="color:deepskyblue;position:absolute;left:0px;top:0px;font-size:30px;z-index:99999;"></div>  <!--123g标题切换-->
+   				</div>
+				<div class="usernumbox">
+					<div>
+						<span>总用户数:</span>
+                        <span class="shuzi" id="usernum">111111</span>
+					</div>
+					<div class="number">
+						<span>2G用户数：</span>
+						<span class="shuzi">100</span>
+					</div>
+					<div class="number">
+						<span>3G用户数：</span>
+						<span class="shuzi">100</span>
+					</div>
+					<div class="number">
+						<span>4G用户数：</span>
+						<span class="shuzi">100</span>
+					</div>
+				</div>
+			</div>
+			<!--中间下部场馆图-->
+			 <!--一级呼吸灯-->
+			     <div class="place1">
+					 <div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					 </div>
+			     </div>
+			<!--二级呼吸灯-->
+			<div class="place2">
+				<div class="floor onefloor">
+					<div style="height:auto;text-align:center;">一楼</div>
+					<div class="top">
+						<div class="topleft"></div>
+						<div class="topcenter">
+							<div class="clickstadium">
+								<img src="img/icon/4.1H.png" alt="">
+								<span>4.1H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+							<div class="clickstadium">
+								<img src="img/icon/3H.png" alt="">
+								<span>3H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="topright">
+							<div class="clickstadium">
+								<img src="img/icon/bei.png" alt="">
+								<span>北厅</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="center">
+						<div class="centerleft">
+							<div class="clickstadium">
+								<img src="img/icon/5.1H.png" alt="">
+								<span>5.1H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+							<div class="clickstadium">
+								<img src="img/icon/6.1H.png" alt="">
+								<span>6.1H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="centercenter" style="padding-top:10px;box-sizing:border-box;">
+							<div class="clickstadium">
+								<img src="img/icon/guanchang1.png" alt="" style="width:100%;">
+								<span>广场</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="centerright">
+							<div class="clickstadium" style="margin-left:7px;">
+								<img src="img/icon/2H.png" alt="">
+								<span>2H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+							<div class="clickstadium" style="margin-left:7px;">
+								<img src="img/icon/1H.png" alt="">
+								<span>1H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="top">
+						<div class="topleft"></div>
+						<div class="topcenter" style="margin-top:40px;">
+							<div class="clickstadium">
+								<img src="img/icon/7.1H.png" alt="">
+								<span>7.1H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+							<div class="clickstadium">
+								<img src="img/icon/8.1H.png" alt="">
+								<span>8.1H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="topright"></div>
+					</div>
+				</div>
+				<div class="floor twofloor">
+					<div style="height:auto;text-align:center;">二楼</div>
+					<div class="top">
+						<div class="topleft" style="position:relative;">
+							<div class="clickstadium">
+								<img src="img/icon/xi.png" alt="">
+								<span>西厅</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+							<div class="clickstadium" style="width:100px;position:absolute;left:0;bottom:60%;">
+								<img src="img/icon/xroom.png" alt="">
+								<span style="position:absolute;top:38%;">西入口</span>
+								<div class="spinner spinner2" style="position:absolute;top:35%;">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="topcenter">
+							<div class="clickstadium">
+								<img src="img/icon/4.2H.png" alt="">
+								<span>4.2H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="topright"></div>
+					</div>
+					<div class="center">
+						<div class="centerleft">
+							<div class="clickstadium">
+								<img src="img/icon/5.2H.png" alt="">
+								<span>5.2H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+							<div class="clickstadium">
+								<img src="img/icon/6.2H.png" alt="">
+								<span>6.2H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="centercenter" style="padding-top:10px;box-sizing:border-box;position:relative">
+							<div class="clickstadium" style="position:absolute;left:0;right:0;margin:auto;">
+								<img src="img/icon/guanchang.png" alt="" style="width:100%;">
+								<span style="position:absolute;left:0;right:0;margin:auto;">广场</span>
+								<div class="spinner spinner3">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="centerright"></div>
+					</div>
+					<div class="top">
+						<div class="topleft" style="margin-top:30px;">
+							<div class="clickstadium" style="width:100px;position:relative">
+								<img src="img/icon/nroom.png" alt="">
+								<span style="position:absolute;top:43%;">南入口</span>
+								<div class="spinner spinner2" style="position:absolute;top:43%;">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="topcenter" style="margin-top:40px;">
+							<div class="clickstadium">
+								<img src="img/icon/7.2H.png" alt="">
+								<span>7.2H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+							<div class="clickstadium">
+								<img src="img/icon/8.2H.png" alt="">
+								<span>8.2H</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="topright" style="position:relative;">
+							<div class="clickstadium" style="position:absolute;bottom:30%;">
+								<img src="img/icon/dong.png" alt="">
+								<span>东厅</span>
+								<div class="spinner spinner2">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+							<div class="clickstadium" style="width:100px;position:absolute;left:35%;bottom:25px;">
+								<img src="img/icon/nroom.png" alt="">
+								<span style="position:absolute;top:38%;">东入口</span>
+								<div class="spinner spinner2" style="position:absolute;top:43%;">
+									<div class="double-bounce1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+   		</div>
+   		<!--右边-->
+   		<div class="nright">
+   			<!--右边上部分-->
+   			<div class="nrightwarptopbox">
+	   			<div class="nrighttop">
+					
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+					<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext changgname">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan liyongspanG2">数值</span>
+			   						<span class="rblspan liyongspanG3">数值</span>
+			   						<span class="rblspan liyongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan liulangspanG2">数值</span>
+			   						<span class="rblspan liulangspanG3">数值</span>
+			   						<span class="rblspan liulangspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan huawuspanG2">数值</span>
+			   						<span class="rblspan huawuspanG3">数值</span>
+			   						<span class="rblspan  huawuspanG4">数值</span>
+			   					</div>
+
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan botongspanG2">数值</span>
+			   						<span class="rblspan botongspanG3">数值</span>
+			   						<span class="rblspan botongspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan diaohuaspanG2">数值</span>
+			   						<span class="rblspan diaohuaspanG3">数值</span>
+			   						<span class="rblspan diaohuaspanG4">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan keyongspanG2">数值</span>
+			   						<span class="rblspan keyongspanG3">数值</span>
+			   						<span class="rblspan keyongspanG4">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			
+				</div>
+   			</div>
+			<!--右边下部分-->
+   			<div class="nrightwarpbottombox">  <!--360px-->
+   				<div class="nrightbottomroll">  <!--1080px-->
+   					<!--2G接通率 2G掉话率-->
+   					<div class="rightbottomlist"> <!--120px,总共6个-->
+		   				<div class="rbottomtitlebox">
+		   					<span class="tttext">2G</span>
+							<span>小区名</span>
+		   					<span>接通率</span>
+		   					<span>区域名</span>
+		   				</div>
+						<div class="rbottombodybox"> <!--150px-->
+		   					<div class="rbbottomodyrollbox"> <!--300px-->
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top1</span>
+									</div>
+			   						<div class="tbd1">
+										<span></span>
+			   							<span class="xiaoqu">--</span>
+			   						</div>
+			   						<span class="rblspan G2spanjt1">--</span>
+			   						<span class="rblspan G2spanjt2">--</span>
+			   					</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top2</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top3</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top4</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top5</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top6</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top7</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top8</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top9</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top10</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+			   					
+		   					</div>
+		   				</div>
+		   			</div>
+
+					<div class="rightbottomlist"> <!--180px,总共6个-->
+		   				<div class="rbottomtitlebox">
+		   					<span class="tttext">2G</span>
+							<span>小区名</span>
+							<span>掉话率</span>
+							<span>区域名</span>
+		   				</div>
+						<div class="rbottombodybox"> <!--150px-->
+							<div class="rbbottomodyrollbox"> <!--300px-->
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top1</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top2</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top3</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top4</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top5</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top6</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top7</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top8</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top9</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top10</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+							</div>
+						</div>
+		   			</div>
+					<!--3G接通率 3G掉话率-->
+					<div class="rightbottomlist"> <!--120px,总共6个-->
+						<div class="rbottomtitlebox">
+							<span class="tttext">3G</span>
+							<span>小区名</span>
+							<span>接通率</span>
+							<span>区域名</span>
+						</div>
+						<div class="rbottombodybox"> <!--150px-->
+							<div class="rbbottomodyrollbox"> <!--300px-->
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top1</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top2</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top3</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top4</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top5</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top6</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top7</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top8</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top9</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top10</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu"></span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="rightbottomlist"> <!--180px,总共6个-->
+						<div class="rbottomtitlebox">
+							<span class="tttext">3G</span>
+							<span>小区名</span>
+							<span>掉话率</span>
+							<span>区域名</span>
+						</div>
+						<div class="rbottombodybox"> <!--150px-->
+							<div class="rbbottomodyrollbox"> <!--300px-->
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top1</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top2</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top3</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top4</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top5</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top6</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top7</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top8</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top9</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top10</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--4G接通率 4G掉话率-->
+					<div class="rightbottomlist"> <!--120px,总共6个-->
+						<div class="rbottomtitlebox">
+							<span class="tttext">4G</span>
+							<span>小区名</span>
+							<span>接通率</span>
+							<span>区域名</span>
+						</div>
+						<div class="rbottombodybox"> <!--150px-->
+							<div class="rbbottomodyrollbox"> <!--300px-->
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top1</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top2</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top3</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top4</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top5</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top6</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top7</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top8</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top9</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top10</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="rightbottomlist"> <!--180px,总共6个-->
+						<div class="rbottomtitlebox">
+							<span class="tttext">4G</span>
+							<span>小区名</span>
+							<span>掉话率</span>
+							<span>区域名</span>
+						</div>
+						<div class="rbottombodybox"> <!--150px-->
+							<div class="rbbottomodyrollbox"> <!--300px-->
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top1</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top2</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top3</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top4</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top5</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top6</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top7</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top8</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top9</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+								<div class="rbodylist">
+									<div class="top10">
+										<span>Top10</span>
+									</div>
+									<div class="tbd1">
+										<span></span>
+										<span class="xiaoqu">--</span>
+									</div>
+									<span class="rblspan G2spanjt1">--</span>
+									<span class="rblspan G2spanjt2">--</span>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+   			</div>
+   		    <!--点击场馆某区之后 右边的展示-->
+   			<div style="display: none;" class="nrCutbox">
+   				<div class="nrCut">
+   					<div class="Cuttextbox">
+   						<div class="cuttitlebox">
+   							<span id="cuttitle">name</span>
+   							<span>2G</span>
+   							<span>3G</span>
+   							<span>4G</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>利用率</span>
+   							</div>
+   							<span class="cutonespan cutoneliyongspanG2">数值</span>
+   							<span class="cutonespan cutoneliyongspanG3">数值</span>
+   							<span class="cutonespan cutoneliyongspanG4">数值</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>流量</span>
+   							</div>
+   							<span class="cutonespan cutoneliuliangspanG2">数值</span>
+   							<span class="cutonespan cutoneliuliangspanG3">数值</span>
+   							<span class="cutonespan cutoneliuliangspanG4">数值</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>话务量</span>
+   							</div>
+   							<span class="cutonespan cutonehuawuspanG2">数值</span>
+   							<span class="cutonespan cutonehuawuspanG3">数值</span>
+   							<span class="cutonespan cutonehuawuspanG4">数值</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>接通率</span>
+   							</div>
+   							<span class="cutonespan cutonejietongspanG2">数值</span>
+   							<span class="cutonespan cutonejietongspanG3">数值</span>
+   							<span class="cutonespan cutonejietongspanG4">数值</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>掉话率</span>
+   							</div>
+   							<span class="cutonespan cutonediaohuaspanG2">数值</span>
+   							<span class="cutonespan cutonediaohuaspanG3">数值</span>
+   							<span class="cutonespan cutonediaohuaspanG4">数值</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>可用率</span>
+   							</div>
+   							<span class="cutonespan cutonekeyongspanG2">数值</span>
+   							<span class="cutonespan cutonekeyongspanG3">数值</span>
+   							<span class="cutonespan cutonekeyongspanG4">数值</span>
+   						</div>
+   						
+   					</div>
+   				</div>
+   				<button class="getbackrollbtn">返回</button>
+   			</div>
+   		</div>
+   </div>
+</body>
+<script type="text/javascript">
+    //添加效果
+    $(function(){
+        //右边部分添加的 滑动 动画效果
+        var rollnum=0,rollbodynum=0,bottomrollnum=0,rbottombodyroll=0;
+
+        var righttopwai = setInterval(nrighttoprollFn,10000);
+
+        var righttopnei = setInterval(rbodyrollboxFn,5000)
+
+        var rightbottomwai = setInterval(nrightbottomrollFn,10000)
+
+        var rightbottomnei = setInterval(rbottombodyboxFn,5000)
+        //上下滚动函数
+        function nrighttoprollFn(){
+            rollnum+=8;
+            if(rollnum == 80){
+                rollnum=0
+            }
+            if(rollnum==0){
+                $('.nrighttop').css({'transition':'none','marginTop':'0'})
+            }else{
+                $('.nrighttop').css({'marginTop':-rollnum+'rem','transition':'margin-top 1s'})
+            }
+        }
+        function rbodyrollboxFn(){
+            rollbodynum+=3;
+            if(rollbodynum == 6){
+                rollbodynum=0
+            }
+            if(rollbodynum==0){
+                $('.rbodyrollbox').css({'transition':'none','marginTop':'0'})
+            }else{
+                $('.rbodyrollbox').css({'marginTop':-rollbodynum+'rem','transition':'margin-top 1s'})
+            }
+        }
+        function nrightbottomrollFn(){
+            bottomrollnum+=12;
+            if(bottomrollnum == 36){
+                bottomrollnum=0
+            }
+            if(bottomrollnum==0){
+                $('.nrightbottomroll').css({'transition':'none','marginTop':'0'})
+            }else{
+                $('.nrightbottomroll').css({'marginTop':-bottomrollnum+'rem','transition':'margin-top 1s'})
+            }
+        }
+        function rbottombodyboxFn(){
+            rbottombodyroll+=5;
+            if(rbottombodyroll == 10){
+                rbottombodyroll=0
+            }
+            if(rbottombodyroll==0){
+                $('.rbbottomodyrollbox').css({'transition':'none','marginTop':'0'})
+            }else{
+                $('.rbbottomodyrollbox').css({'marginTop':-rbottombodyroll+'rem','transition':'margin-top 1s'})
+            }
+        }
+
+//		function nrighttoprollFn(){
+//			rollnum+=240;
+//			if(rollnum == 2400){
+//				rollnum=0
+//			}
+//			if(rollnum==0){
+//				$('.nrighttop').css({'transition':'none','marginTop':'0'})
+//			}else{
+//				$('.nrighttop').css({'marginTop':-rollnum+'px','transition':'margin-top 1s'})
+//			}
+//		}
+//		function rbodyrollboxFn(){
+//			rollbodynum+=90;
+//			if(rollbodynum == 180){
+//				rollbodynum=0
+//			}
+//			if(rollbodynum==0){
+//				$('.rbodyrollbox').css({'transition':'none','marginTop':'0'})
+//			}else{
+//				$('.rbodyrollbox').css({'marginTop':-rollbodynum+'px','transition':'margin-top 1s'})
+//			}
+//		}
+//		function nrightbottomrollFn(){
+//			bottomrollnum+=360;
+//			if(bottomrollnum == 1080){
+//				bottomrollnum=0
+//			}
+//			if(bottomrollnum==0){
+//				$('.nrightbottomroll').css({'transition':'none','marginTop':'0'})
+//			}else{
+//				$('.nrightbottomroll').css({'marginTop':-bottomrollnum+'px','transition':'margin-top 1s'})
+//			}
+//		}
+//		function rbottombodyboxFn(){
+//			rbottombodyroll+=150;
+//			if(rbottombodyroll == 300){
+//				rbottombodyroll=0
+//			}
+//			if(rbottombodyroll==0){
+//				$('.rbbottomodyrollbox').css({'transition':'none','marginTop':'0'})
+//			}else{
+//				$('.rbbottomodyrollbox').css({'marginTop':-rbottombodyroll+'px','transition':'margin-top 1s'})
+//			}
+//		}
+        //滚动函数结束
+
+        //点击不同场馆
+        $('.clickstadium').on('click',function(){
+            var index=$('.clickstadium').index($(this)),stadiumname;
+            //var stadiumarr=["4.1H","3H","北广场停车场","5.1H","6.1H","广场","2H","1H","7.1H","8.1H","西广场出入口","西入口","4.2H","5.2H","6.2H","广场","南入口","7.2H","8.2H","东厅","东入口"]
+            var stadiumarr=["4.1H","3H","NH","5.1H","6.1H","北广场停车场","2H","1H","7.1H","8.1H","WH","西广场出入口","4.2H","5.2H","6.2h","北广场停车场","南广场出入口","7.2H","8.2H","EH","东广场出入口"]
+            alert("您点击了"+"  "+stadiumarr[index]+'\n'+"右边此时展示的标题是"+stadiumarr[index])
+
+            $('.nrightwarptopbox').fadeOut();
+            $('.nrightwarpbottombox').fadeOut();
+            $('.nrCutbox').fadeIn();
+            $('#cuttitle').html(stadiumarr[index])
+            for(var i=0;i<cgarr.data.length;i++){
+                if(stadiumarr[index] == cgarr.data[i].name){
+                    //利用率
+                    $('.cutoneliyongspanG2').html(cgarr.data[i].useRate[0])
+                    $('.cutoneliyongspanG3').html(cgarr.data[i].useRate[1])
+                    $('.cutoneliyongspanG4').html(cgarr.data[i].useRate[2])
+                    //流量
+                    $('.cutoneliuliangspanG2').html(cgarr.data[i].flowArray[0])
+                    $('.cutoneliuliangspanG3').html(cgarr.data[i].flowArray[1])
+                    $('.cutoneliuliangspanG4').html(cgarr.data[i].flowArray[2])
+                    //话务量cutonehuawuspanG2
+                    $('.cutonehuawuspanG2').html(cgarr.data[i].trafficArray[0])
+                    $('.cutonehuawuspanG3').html(cgarr.data[i].trafficArray[1])
+                    $('.cutonehuawuspanG4').html(cgarr.data[i].trafficArray[2])
+                    //接通率
+                    $('.cutonejietongspanG2').html(cgarr.data[i].connectionRateArray[0])
+                    $('.cutonejietongspanG3').html(cgarr.data[i].connectionRateArray[1])
+                    $('.cutonejietongspanG4').html(cgarr.data[i].connectionRateArray[2])
+                    //掉话率
+                    $('.cutonediaohuaspanG2').html(cgarr.data[i].callDropRateArray[0])
+                    $('.cutonediaohuaspanG3').html(cgarr.data[i].callDropRateArray[1])
+                    $('.cutonediaohuaspanG4').html(cgarr.data[i].callDropRateArray[2])
+                    //可用率
+                    $('.cutonekeyongspanG2').html(cgarr.data[i].availabilityArray[0])
+                    $('.cutonekeyongspanG3').html(cgarr.data[i].availabilityArray[1])
+                    $('.cutonekeyongspanG4').html(cgarr.data[i].availabilityArray[2])
+                }
+            }
+        })
+
+        $('.getbackrollbtn').on('click',function(){
+            $('.nrightwarptopbox').fadeIn();
+            $('.nrightwarpbottombox').fadeIn();
+            $('.nrCutbox').fadeOut();
+            $(".place2").fadeOut();
+            $(".place1").fadeIn();
+        })
+        //=======================================================================
+//		var cutnum=0;
+//		//点击切换左上图为柱状图
+//		$('.leftonebox').eq(0).on('click',function(){
+//			if(cutnum%2 == 0){
+//				createFnobj.cutleftytop(2,lefttopcutarr)
+//			}else{
+//				createFnobj.Gliyonglv(2,aaa)
+//			}
+//			cutnum++
+//		})
+//定时器刷新函数
+        addchangguandata()//添加场馆数据
+        addtopdatafn()//添加top1-top10函数
+        var cut234GFn = setInterval(cutG2G3G4,5000)    //每隔5s切换一次
+        var Anum=2;Abool=true;
+        function cutG2G3G4(){//定时刷新234G切换
+            if(Abool){
+                Anum++
+                Abool=false
+            }
+            //每隔5秒请求一次数据，根据数据创建变量，并传入参数，执行不同函数
+            //4G没有话务量，根据请求返回的参数，判断如果为4G，不执行Huacloumn函数，并删除#lefthreetu节点，同时让
+            //#leftonetu、#leftwotu节点高度撑满父级
+            createFnobj.Gliyonglv(Anum,newbigDataarr[Anum-2].liyonglv,newbigDataarr[Anum-2].timearr)
+            createFnobj.FlowHcolumn(Anum,newbigDataarr[Anum-2].timearr,newbigDataarr[Anum-2].liuliang)
+            if(Anum != 4){
+                createFnobj.Huacloumn(Anum,newbigDataarr[Anum-2].huawuliang,newbigDataarr[Anum-2].xiazuandata)
+            }else{
+                $('#lefthreetu').remove()
+            }
+            createFnobj.createinst(newbigDataarr[Anum-2].jietong,newbigDataarr[Anum-2].diaohua,newbigDataarr[Anum-2].keyong,Anum)
+
+            Anum++
+            if(Anum == 5){
+                Anum=2
+            }
+        }
+
+//									页面第一次加载数据	Anum=2,全部传入为2G的数据
+//左上面积图表
+        //创建左上角折线图利用率，num为G数，liyongarr为折线图数据，timearr为时间段数组
+
+        createFnobj.Gliyonglv(Anum,newbigDataarr[0].liyonglv,newbigDataarr[0].timearr)
+
+//================================================================================================================
+        //流量横向柱形图
+        //num为G数字，arr1为y轴标题==时间数组，arr2为流量数据
+        createFnobj.FlowHcolumn(Anum,newbigDataarr[0].timearr,newbigDataarr[0].liuliang)
+
+//=======================================================================================================
+        //话务量柱形图
+        //参数id为容器id，num为2、3、4,arr1为传入数据1,arr2为传入数据2
+        createFnobj.Huacloumn(Anum,newbigDataarr[0].huawuliang,newbigDataarr[0].xiazuandata)
+//中部仪表图
+//参数num1为仪表盘1初始化数据，参数num2为仪表盘2初始化数据，参数num3为仪表盘3初始化数据
+//根据数据范围设置仪表盘单位
+        createFnobj.createinst(newbigDataarr[0].jietong,newbigDataarr[0].diaohua,newbigDataarr[0].keyong,Anum)
+//=============================================
+        //点击左上角 切换234G,并清除定时器效果
+        $(".cut234Gbox>span").on('click',function(){
+            var index=$(this).index(".cut234Gbox>span");
+            $(".cut234Gbox>span").removeClass("active").eq(index).addClass("active");
+        });
+		$('.clickcutG').on('click',function(){
+            var index=$('.clickcutG').index($(this));
+            Anum=index+2
+            clearInterval(cut234GFn);
+            createFnobj.Gliyonglv(Anum,newbigDataarr[index].liyonglv,newbigDataarr[index].timearr)
+            createFnobj.FlowHcolumn(Anum,newbigDataarr[index].timearr,newbigDataarr[index].liuliang)
+            if(Anum != 4){
+                createFnobj.Huacloumn(Anum,newbigDataarr[index].huawuliang,newbigDataarr[index].xiazuandata)
+            }else{
+                console.log(Anum)
+                $('#lefthreetu').remove()    //4G无话务量
+            }
+            createFnobj.createinst(newbigDataarr[Anum-2].jietong,newbigDataarr[Anum-2].diaohua,newbigDataarr[Anum-2].keyong,Anum)
+            if(Anum == 2){
+                $('.nrightbottomroll').css({'transition':'none','marginTop':'0px'})
+            }else if(Anum == 3){
+                $('.nrightbottomroll').css({'transition':'none','marginTop':'-12rem'})
+            }else if(Anum == 4){
+                $('.nrightbottomroll').css({'transition':'none','marginTop':'-24rem'})
+            }
+            clearInterval(rightbottomwai)
+        })
+        //点击自动  恢复自动更新
+        $('#cutauto234G').on('click',function(){
+            cut234GFn = setInterval(cutG2G3G4,5000)
+            if(Anum == 2){
+                bottomrollnum=0
+            }else if(Anum == 3){
+                bottomrollnum=12
+            }else if(Anum == 4){
+                bottomrollnum=24
+            }
+            rightbottomwai = setInterval(nrightbottomrollFn,10000)
+        })
+
+        //设置rem
+        console.log(document.body.clientHeight*0.86/20+"px")
+        $('html').css('font-size',document.body.clientHeight*0.86/20+"px")
+    });
+    // 场馆一二级呼吸灯切换
+    $(".place1").on('click',function(){
+        $(".place1").fadeOut();
+        $(".place2").fadeIn();
+    });
+	//场馆的 报警装置：
+    //设置阀值预警颜色
+    for(var i=0;i<21;i++){
+        $(".spinner2>.double-bounce1").eq(i).css('background',typecolorFn(jietonglvarr[i],diaohualvarr[i]))
+    }
+</script>
+</html>

@@ -1,0 +1,624 @@
+.rtitlebox .tttext{
+			height: 1rem;
+			overflow:hidden;
+		}
+#cuttitle{
+	height: 30px;
+	overflow:hidden;
+}
+/*头部*/
+body,html{
+    width:100%;
+    margin:0;padding:0;
+    color:#fff;
+    font-family:"微软雅黑";
+    background:black;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style:none;
+}
+.header{
+	width:100%;
+	height:88px;
+	border-bottom: 2px solid #353535;
+	position:relative;
+}
+.logobox{
+	width:auto;
+	height:88px;
+	box-sizing: border-box;
+	float: left;
+	padding-left:60px;
+}
+.logoimg{
+	width:auto;
+	height:100%;
+	float: left;
+	display: block;
+}
+.logo2{
+	width:180px;
+	height:50px;
+	margin:0 auto;
+	float: left;
+	margin-top:20px;
+	margin-left:15px;
+	border-left:2px solid #ccc;
+	padding-left:15px;
+	overflow:hidden;
+}
+.logo2 img{
+	width:180px;
+	height:35px;
+}
+.header .titlebox{
+	width:auto;
+	height:88px;
+	font-size:30px;
+	text-align: center;
+	line-height: 88px;
+	color: white;
+	float: left;
+	margin:0 auto;
+	position:absolute;
+	left:0;right:0;
+	margin:auto;
+	box-sizing:border-box;
+	padding-left:40px;
+}
+
+.header #show{
+	float: right;
+	width:20%;
+	height:88px;
+	font-size:22px;
+	color:#fff;
+	text-align: center;
+	line-height: 88px;
+}
+/*正文*/
+.navbox{
+		width: 100%;
+		height:86% ;
+		box-sizing: border-box;
+		position: relative;
+	}
+	.nleft{
+		width:20%;
+		height: 100%;
+		float: left;
+	}
+	.ncenter{
+		width:60%;
+		height: 100%;
+		box-sizing: border-box;
+		border-left: 2px solid #353535;
+		border-right: 2px solid #353535;
+		float: left;
+		overflow-y: hidden;
+	}
+	.nright{
+		width:20%;
+		height: 100%;
+		/*float: left;*/
+		padding: 10px;
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		left: 80%;
+	}
+	/*左上折线图*/
+    .charttitle{
+		width:100%;
+		height:40px;
+	}
+    .charttitle div{
+		width:25%;
+		height:100%;
+		line-height:40px;
+		float:left;
+		text-align:center;
+		border-right:1px solid #353535;
+		border-bottom:1px solid #353535;
+		box-sizing:border-box;
+	}
+	.leftonebox{
+		width: 100%;
+		height: 33%;
+	}
+	.leftonetu{
+		width: 100%;
+		height: 100%;
+	}
+/*中部内容*/
+        .ncttopbox{
+    		width: 100%;
+    		height: 160px;
+    		position: relative;
+    	}
+    	.instbox{
+    		width: 70%;
+    		height: 140px;
+    		position: absolute;
+    		top: 20px;
+    		left: 25%;
+    	}
+    	.inst{
+    		width: 33%;
+    		height: 120px;
+    		float: left;
+    	}
+		.usernumbox{
+			padding-left:30px;
+			padding-top:20px;
+			box-sizing:border-box;
+			font-size:14px;
+		}
+		.usernumbox .shuzi{
+			color:yellow;
+			font-size:16px;
+		}
+
+        .highcharts-color-undefined span div span{
+			font-size:18px;
+		}
+        .highcharts-axis-title{
+			display:none;
+		}
+/*中间下部分场馆图*/
+      /*场馆一级呼吸灯*/
+        .place1{
+			width:100%;
+			height:80%;
+			background-image:url("../img/gif.gif");
+            background-size:100% 100%;
+			background-repeat:no-repeat;
+			position:relative;
+		}
+             /*中间*/
+            .spinner {
+				width: 75px;
+				height: 75px;
+				position:absolute;
+				left:47%;
+				margin:auto;
+				top:260px;
+				z-index:999;
+			}
+
+			.double-bounce1, .double-bounce2 {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				background-color:lightgreen;
+				opacity: 0.7;
+				position: absolute;
+				top: 0;
+				left: 0;
+				-webkit-animation: bounce 5.0s infinite ease-in-out;
+				animation: bounce 5.0s infinite ease-in-out;
+			}
+
+			.double-bounce2 {
+				-webkit-animation-delay: -1.0s;
+				animation-delay: -1.0s;
+			}
+
+			@-webkit-keyframes bounce {
+				0%, 100% { -webkit-transform: scale(0.0) }
+				50% { -webkit-transform: scale(1.0) }
+			}
+
+			@keyframes bounce {
+				0%, 100% {
+					transform: scale(0.0);
+					-webkit-transform: scale(0.0);
+				} 50% {
+					  transform: scale(1.0);
+					  -webkit-transform: scale(1.0);
+				  }
+			}
+		/*场馆二级呼吸灯*/
+            .place2{
+				display:none;
+			}
+            .place2 .floor{
+				width:48%;
+				height:500px;
+				box-sizing:border-box;
+				float:left;
+				font-size:20px;
+			}
+            .place2 .twofloor{
+				float:right;
+			}
+			.floor .top,.floor .center,.floor .bottom{
+				width:100%;
+				height:33.33333%;
+				box-sizing:border-box;
+			}
+            .floor .top .topleft,.floor .top .topcenter,.floor .top .topright{
+				float:left;
+				width:33.33%;
+				height:100%;
+				box-sizing:border-box;
+			}
+            .floor .top .topcenter div{
+				float:left;
+				width:50%;
+				height:100%;
+				box-sizing:border-box;
+			}
+			.floor img{
+				width:90%;
+				height:80%;
+				margin-top:10%;
+			}
+			.clickstadium{
+				position:relative;
+			}
+            .clickstadium span{
+				text-align:center;
+				position:absolute;
+				left:0;right:0;
+				top:20px;
+				margin:auto;
+
+			}
+            .place2 .floor div div .clickstadium .spinner2,.place2 .floor div div .clickstadium .spinner3{
+				width:28px;
+				height:28px;
+				margin-top:0;
+				position:absolute;
+				left:0;right:0;
+				margin:auto;
+				top:80px;
+				z-index:999;
+			}
+			.place2 .floor div .spinner2 .double-bounce1,.place2 .floor div .spinner2 .double-bounce3 {
+				width:100%;
+				height:100%;
+				border-radius: 50%;
+				float:none;
+				background-color:lightgreen;
+				opacity: 0.7;
+				position: absolute;
+				top: 0;
+				left: 0;
+				-webkit-animation: bounce 3.0s infinite ease-in-out;
+				animation: bounce 3.0s infinite ease-in-out;
+				z-index:99999;
+			}
+            .floor .top .topleft .clickstadium img,.floor .top .topright .clickstadium img{
+				width:60%;
+				height:80%;
+				margin-top:35%;
+				margin-left:15%;
+			}
+            .floor .top .topleft .clickstadium .spinner2,.floor .top .topright .clickstadium .spinner2,.floor .top .topleft .clickstadium .spinner3,.floor .top .topright .clickstadium .spinner3{
+				position:absolute;
+				right:20%;
+				top:80px;
+			}
+			.floor .top .topleft .clickstadium span,.floor .top .topright .clickstadium span{
+				position:absolute;
+				right:20%;
+				top:80px;
+			}
+			.floor .center .centerleft,.floor .center .centercenter,.floor .center .centerright{
+				float:left;
+				width:33.33%;
+				height:100%;
+				box-sizing:border-box;
+			}
+.           .floor .center .centerleft .clickstadium{
+	             width:100%;
+	             height:40%;
+            }
+			.floor .center .centerleft .clickstadium .spinner2,.center .centerleft .clickstadium .spinner2{
+				position:absolute;
+				right:10%;
+				top:35px;
+			}
+			.floor .center .centerright .clickstadium .spinner2,.center .centerright .clickstadium .spinner2{
+				position:absolute;
+				right:10%;
+				top:35px;
+			}
+
+
+.rbottomtitlebox span:first-child {
+	text-align: left;
+	float: left;
+	font-size:14px;
+}
+.highcharts-title{
+	font-size:10px;
+}
+.highcharts-legend-item{
+	display:none;
+}
+/*右边点击场馆显示内容*/
+        .tttext{
+			padding-left:12px;
+			box-sizing:border-box;
+			overflow: hidden;
+		}
+    	.nrCutbox{
+    		width: 94%;
+    		height: 100%;
+    		position: absolute;
+    		top: 3%;
+    		left: 3%;
+    	}
+    	.nrCut{
+    		width: 100%;
+    		height: 210px;
+    		background: black;
+    		z-index: 9999;
+    	}
+    	.Cuttextbox{
+    		width: 100%;
+    		height: 210px;
+    	}
+    	.cuttitlebox{
+    		width: 100%;
+    		height: 30px;
+    		background:#333399;
+    	}
+    	.cuttitlebox span{
+    		float: left;
+    		width: 25%;
+    		line-height: 30px;
+    		font-size: 14px;
+    		text-align: center;
+    	}
+    	.cuttitlebox span:first-child{
+    		text-align: left;
+    	}
+    	.cutone{
+    		width: 100%;
+    		height: 30px;
+    	}
+    	.cutongstyle,.cutonespan{
+    		width: 25%;
+    		height: 30px;
+    		float: left;
+    	}
+    	.cutongstyle span:first-child{
+    		float: left;
+    		background:#333399;
+    		width: 10px;
+    		height: 10px;
+    		border-radius: 10px;
+    		margin: 10px 2px;
+    	}
+    	.cutongstyle span:last-child{
+    		float: left;
+    		line-height: 30px;
+    		width: auto;
+    		font-size: 12px;
+    	}
+    	.cutonespan{
+    		line-height: 30px;
+    		font-size: 14px;
+    		text-align: center;
+    	}
+    	.getbackrollbtn{
+    		display: block;
+    		margin: 20px auto;
+    		outline: none;
+    		background: white;
+    		color: #333399;
+    		line-height: 30px;
+    		border: none;
+    		border-radius: 6px;
+    		height: 30px;
+    		width: 140px;
+    	}
+		/*右边上部内容*/
+		.nrightwarptopbox{
+			width: 100%;
+			height: 8rem;
+			overflow: hidden;	
+			/*margin-bottom:10px;*/
+		}
+		.nrighttop{
+			width: 100%;
+			height: 20rem;
+			margin-top:0px;		
+		}
+    	.righttoplist{
+    		width: 100%;
+    		height: 4rem;
+    	} 
+    	.rtitlebox{
+    		width: 100%;
+    		height: 1rem;
+    		background: #333399;
+    	}
+    	.rtitlebox span{
+    		width: 25%;
+    		line-height: 1rem;
+    		font-size: 14px;
+    		text-align: center;
+    		float: left;
+    	}
+    	.rtitlebox span:first-child{
+    		text-align: left;
+    		float: left;
+    		overflow: hidden;
+			font-size:14px;
+    	}
+    	.rbodyrollbox{
+    		width: 100%;
+    		height: 6rem;
+    	}
+    	.rbodybox{
+    		width: 100%;
+    		height: 3rem;
+    		overflow: hidden;
+    	}
+    	.rbodylist{
+    		width: 100%;
+    		height: 1rem;
+    	}
+    	.tbd1{
+    		width: 25%;
+    		height: 1rem;
+    		float: left;
+    	}
+    	.tbd1 span:first-child{
+    		float: left;
+    		background:#000;
+    		width: 10px;
+    		height: 10px;
+    		border-radius: 10px;
+    		margin: 10px 2px;
+    	}
+    	.tbd1 span:last-child{
+    		float: left;
+    		line-height: 1rem;
+    		width: auto;
+    		font-size: 12px;
+    	}
+    	.rblspan{
+    		width: 25%;
+    		line-height: 1rem;
+    		float: left;
+    		font-size: 12px;
+    		text-align: center;
+    	}
+    	
+    		/*右边下部内容*/
+   				span{
+   					cursor: pointer;
+   				}
+				.nrightwarpbottombox{
+					width: 100%;
+					height: 12rem;
+					overflow: hidden;
+				}
+		    	.nrightbottomroll{
+		    		width: 100%;
+					height: 36rem;
+		    	}
+		    	.rightbottomlist{
+   					width: 100%;
+   					height: 6rem;
+   				}
+   				.rbottomtitlebox{
+   					width: 100%;
+		    		height: 1rem;
+		    		background: #336633;
+   				}
+   				.rbottomtitlebox span{
+		    		width:25%;
+		    		line-height: 1rem;
+		    		font-size: 14px;
+		    		text-align: center;
+		    		float: left;
+		    	}
+		    	.rbottomtitlebox span:first-child{
+		    		text-align: left;
+		    		float: left;
+		    		font-size:14px;
+		    	}
+		    	.rbottombodybox{
+		    		width: 100%;
+		    		height: 5rem;
+		    		overflow: hidden;
+		    	}
+		    	.rbbottomodyrollbox{
+		    		width: 100%;
+    				height: 10rem;
+		    	}
+		    	
+		    	
+
+.rbbottomodyrollbox .rbodylist{
+    		width: 100%;
+    		height: 1rem;
+    	}
+		.rbbottomodyrollbox .rbodylist span{
+			width: 25%;
+			height: 1rem;
+		}
+		.rbbottomodyrollbox .rbodylist div{
+			width: 25%;
+			height: 1rem;
+			float:left;
+			text-align:center;
+		}
+		.rbbottomodyrollbox .rbodylist div{
+			width: 25%;
+			height: 1rem;
+			float:left;
+			text-align:center;
+			line-height:1rem;
+		}
+        .rbbottomodyrollbox .rbodylist .top10{
+			line-height:1rem;
+		}
+        .rbbottomodyrollbox .rbodylist .top10 span{
+			float:left;
+			font-size:12px;
+			padding-left:12px;
+			box-sizing:border-box;
+		}
+.rbbottomodyrollbox .rbodylist .tbd1{
+    		width:25%;
+    		height: 1rem;
+    		float: left;
+    	}
+
+    	 .rbbottomodyrollbox .rbodylist .tbd1 span:last-child{
+    		float: left;
+    		line-height: 1rem;
+    		width: auto;
+    		font-size: 12px;
+    	}
+    	.rbbottomodyrollbox .rbodylist .rblspan{
+    		width: 25%;
+    		line-height: 1rem;
+    		float: left;
+    		font-size: 12px;
+    		text-align: center;
+    	}
+        .rbbottomodyrollbox .rbodylist .tbd1 span:first-child{
+			background:#000000;
+		}
+
+.cut234Gbox{
+    		width:100%;
+    		height:35px;
+    		margin: 0 auto;
+    	}
+    	.cut234Gbox span{
+    		float: left;
+    		width:25%;
+    		height:35px;
+    		line-height:35px;
+    		font-size: 14px;
+    		text-align: center;
+    		color: white;
+    		border:1px solid white;
+			box-sizing:border-box;
+    	}
+    	.clickcutG{
+    		font-size: 12px;
+    	}
+		.cut234Gbox .active{
+			color:yellow;
+			font-size:18px;
+			font-weight:bold;
+		}
